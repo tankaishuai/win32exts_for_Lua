@@ -1,0 +1,2 @@
+command:
+glue srlua.exe srluademo.lua srluademo.exe
