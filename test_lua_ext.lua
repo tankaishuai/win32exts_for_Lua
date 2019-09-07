@@ -1,10 +1,10 @@
-require("win32exts")
+﻿require("win32exts")
 
 --
 -- 加载模块符号信息
 --
 print("----------")
-iii = win32exts.load_sym("kernel32", "*")
+iii = win32exts.load_sym("*", "*")
 iii = win32exts.load_sym("user32", "*")
 
 --
@@ -24,7 +24,9 @@ g_exe = win32exts.read_wstring(g_buf, 0, -1)
 --
 -- 创建一个COM组件对象（这里以加载自己为例）
 --
+win32exts.CoInitialize();
 win32atls = win32exts.create_object("win32exts.win32atls")
+print(win32atls)
 assert(win32atls)
 
 -- 查询接口
