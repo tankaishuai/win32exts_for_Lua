@@ -1,12 +1,12 @@
-# ver 41.2020.2.27 更新：
+# ver 44.2020.3.3 更新：
 
 1、大大扩充了对于多线程、多进程 应用开发的能力支持
 
-     （见文档： https://blog.csdn.net/tan_kaishuai/article/details/104393576  ）
+     （见文档： [https://blog.csdn.net/tan_kaishuai/article/details/104393576](https://blog.csdn.net/tan_kaishuai/article/details/104393576)  ）
      
 2、扩充了枚举 进程、线程、服务、注册表、Dll模块、用户、窗口、工作站、导入表、导出表、目录、内存堆、窗口属性  等等系统环境信息的接口： list_****()
         
-     （见文档：https://blog.csdn.net/tan_kaishuai/article/details/104507255    ）
+     （见文档：[https://blog.csdn.net/tan_kaishuai/article/details/104507255](https://blog.csdn.net/tan_kaishuai/article/details/104507255)    ）
      
 3、扩充了对于位运算、数学运算的支持
 
@@ -16,7 +16,11 @@
 
      （见文档：暂缺）
 
-5、其它一些实用 API 的支持（如模块注入、目录监控、管道输入输出 等等）
+5、完善win32基础交互API：
+
+     （见文档： [https://blog.csdn.net/tan_kaishuai/article/details/100019191](https://blog.csdn.net/tan_kaishuai/article/details/100019191)   ）
+
+6、其它一些实用 API 的支持（如模块注入、目录监控、管道输入输出、WMI 等等）
 
      （见文档：暂缺）
 
