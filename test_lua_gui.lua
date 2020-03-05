@@ -1,5 +1,6 @@
 
 require "win32exts"
+win32exts.set_acp(0)
 
 local pBuffer = win32exts.malloc(2*260)
 

@@ -1,19 +1,20 @@
-ï»¿require("win32exts")
+require("win32exts")
+win32exts.set_acp(0)
 
 --
--- åŠ è½½æ¨¡å—ç¬¦å·ä¿¡æ¯
+-- ¼ÓÔØÄ£¿é·ûºÅĞÅÏ¢
 --
 print("----------")
 iii = win32exts.load_sym("*", "*")
 iii = win32exts.load_sym("user32", "*")
 
 --
--- åˆ†é…å†…å­˜
+-- ·ÖÅäÄÚ´æ
 --
 g_buf = win32exts.malloc(2*260)
 
 --
--- è·å–å½“å‰è¿›ç¨‹è·¯å¾„
+-- »ñÈ¡µ±Ç°½ø³ÌÂ·¾¶
 --
 g_exe_handle = win32exts.GetModuleHandleW(nil)
 win32exts.GetModuleFileNameW(g_exe_handle, g_buf, 260)
@@ -22,26 +23,26 @@ g_exe = win32exts.read_wstring(g_buf, 0, -1)
 ------------------------------------------------------------------
 
 --
--- åˆ›å»ºä¸€ä¸ªCOMç»„ä»¶å¯¹è±¡ï¼ˆè¿™é‡Œä»¥åŠ è½½è‡ªå·±ä¸ºä¾‹ï¼‰
+-- ´´½¨Ò»¸öCOM×é¼ş¶ÔÏó£¨ÕâÀïÒÔ¼ÓÔØ×Ô¼ºÎªÀı£©
 --
 win32exts.CoInitialize();
 win32atls = win32exts.create_object("win32exts.win32atls")
 print(win32atls)
 assert(win32atls)
 
--- æŸ¥è¯¢æ¥å£
+-- ²éÑ¯½Ó¿Ú
 win32atls_sub = win32atls.query_interface("IRunningObjectTable")
 assert(not win32atls_sub)
 win32atls_sub = win32atls.query_interface("IDispatch")
 assert(win32atls_sub)
 
--- æ‰§è¡ŒCOMæ–¹æ³•ï¼šlist_sym()
+-- Ö´ĞĞCOM·½·¨£ºlist_sym()
 local var = win32atls.invoke("list_sym")
 
--- æ‰§è¡ŒCOMæ–¹æ³•ï¼šload_sym("ole32.dll", "*")
+-- Ö´ĞĞCOM·½·¨£ºload_sym("ole32.dll", "*")
 local var = win32atls.invoke("load_sym", "ole32.dll", "*")
 
--- å†æ¬¡æ‰§è¡ŒCOMæ–¹æ³•ï¼šlist_sym()
+-- ÔÙ´ÎÖ´ĞĞCOM·½·¨£ºlist_sym()
 local var = win32atls.invoke("list_sym")
 win32atls.release()
 if win32atls_sub then
@@ -52,18 +53,18 @@ print("win32exts.win32atls.list_sym = " .. var .. "\n")
 ------------------------------------------------------------------
 
 --
--- å¼¹å‡ºæ¶ˆæ¯æ¡†
+-- µ¯³öÏûÏ¢¿ò
 --
-win32exts.MessageBoxA(nil, "startä½ å¥½A", nil, nil)
+win32exts.MessageBoxA(nil, "startÄãºÃA", nil, nil)
 
--- å®½å­—èŠ‚APIå‚æ•°ç”¨ {} æ‹¬èµ·æ¥
-win32exts.MessageBoxW(nil, {"startä½ å¥½W"}, nil, nil)
-print("startä½ å¥½")
+-- ¿í×Ö½ÚAPI²ÎÊıÓÃ {} À¨ÆğÀ´
+win32exts.MessageBoxW(nil, {"startÄãºÃW"}, nil, nil)
+print("startÄãºÃ")
 
 ------------------------------------------------------------------
 
 --
--- é€€å‡ºè¿›ç¨‹
+-- ÍË³ö½ø³Ì
 --
 win32exts.ExitProcess(-123)
 return
