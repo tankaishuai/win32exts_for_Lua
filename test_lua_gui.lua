@@ -1,4 +1,8 @@
 
+--
+--一个简单的窗口程序demo
+--
+
 require "win32exts"
 win32exts.set_acp(0)
 

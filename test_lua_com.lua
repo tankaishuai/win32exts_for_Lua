@@ -5,6 +5,7 @@
 require "win32exts"
 --初始化代码页
 win32exts.set_acp(0)
+
 --初始化组件库
 win32exts.co_init(true)
 
