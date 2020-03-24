@@ -10,9 +10,10 @@ win32exts.load_sym("*", "*")
 win32exts.setlocale(0, "chs")
 
 function GetSafeStatus(args)
-	hdll = win32exts.LoadLibraryExA(args, nil, 1)
+	hdll = win32exts.LoadLibraryExA(args, nil, 2)
 	strRet = ""
 	if(hdll > 0) then
+		hdll = win32exts.bit_command(hdll, "&", 0xFFFFFF00)
 		lVal = win32exts.read_value(hdll, 0x3c, 4)
 		lVal = win32exts.read_value(hdll, lVal + 0x18 + 0x46, 2)
 		if win32exts.bit_command(lVal, "&", 0x40) == 0x40 then
