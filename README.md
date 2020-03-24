@@ -6,7 +6,7 @@
 
 3、集成 sqlite, access, WMI 等数据库，使用统一接口访问，并自带方便的 shell； 
 
-   支持内存数据库并可 duplicate buffer， 支持内存虚拟文件系统
+          支持内存数据库并可 duplicate buffer， 支持内存虚拟文件系统
 
 4、集成各种实用的模块注入接口，以及 API hook 接口，以及模块隐藏等 Spy 能力
 
