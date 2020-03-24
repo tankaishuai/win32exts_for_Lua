@@ -4,7 +4,8 @@
 
 2、方便的各种网络请求、下载库支持, 集成 libcurl 网络库功能
 
-3、集成 sqlite, access, WMI 等数据库，使用统一接口访问，并自带方便的 shell； 支持内存数据库并可 duplicate buffer， 支持内存虚拟文件系统
+3、集成 sqlite, access, WMI 等数据库，使用统一接口访问，并自带方便的 shell； 
+   支持内存数据库并可 duplicate buffer， 支持内存虚拟文件系统
 
 4、集成各种实用的模块注入接口，以及 API hook 接口，以及模块隐藏等 Spy 能力
 
