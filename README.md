@@ -79,9 +79,9 @@ lua_pushnil(L);
 
 while(lua_next_v3(L, i， 0)){
 
-   //按序获取每一项
+。   //按序获取每一项
    
-   lua_pop_v3(L);
+。   lua_pop_v3(L);
    
 }
 
