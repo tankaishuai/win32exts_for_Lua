@@ -20,7 +20,7 @@
 
 10、扩展各种正则表达式库
 
-11、实现 WinDbg, ExStudPE, CefViewPlugin, libcef 等插件接口
+11、实现 WinDbg, ExStudPE, CefViewPlugin, libcef, VisualDbViewer, x64dbg 等插件接口
 
 12、集成屏幕抓图功能
 
