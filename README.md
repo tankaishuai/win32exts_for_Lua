@@ -44,10 +44,14 @@
 
 22、集成 eval32 for MatLab 功能
 
+23、支持 IE/Trident 内核浏览器沙箱 --use_sandbox
+
+24、支持 API_Monitor 抓取进程API调用轨迹
+
 
 ======================================
 
-# ver 49.2020.4.4 更新：
+# ver 49.2020.4.13 更新：
 
 1、大大扩充了对于多线程、多进程 应用开发的能力支持
 
@@ -84,6 +88,14 @@ while(lua_next_v3(L, i， 0)){
 。   lua_pop_v3(L);
    
 }
+
+8、支持 IE/Trident 内核浏览器沙箱 --use_sandbox
+
+     （见文档：暂缺）
+
+9、支持 API_Monitor 抓取进程API调用轨迹
+
+     （见文档：暂缺）
 
 
 
