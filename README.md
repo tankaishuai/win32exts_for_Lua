@@ -4,7 +4,9 @@
 
 2、方便的各种网络请求、下载库支持, 集成 libcurl 网络库功能
 
-3、集成 Firebird, mysql, sqlite, access, WMI，以及其它提供了ODBC连接的数据库，使用统一接口访问，并自带方便的 shell； 支持内存数据库并可 duplicate buffer， 支持内存虚拟文件系统
+3、集成 Firebird, mysql, sqlite, access, WMI，以及其它提供了ODBC连接的数据库，使用统一接口访问，并自带方便的 shell； 
+
+   支持内存数据库并可 duplicate buffer， 支持内存虚拟文件系统
 
 4、集成各种实用的模块注入接口，以及 API hook 接口，以及模块隐藏等 Spy 能力
 
@@ -50,10 +52,14 @@
 
 25、支持捕获 Chromium 内核的浏览器加载网页通知
 
+26、支持 读、写 html、xml、json、ini、txt 格式配置文件，并实现各种格式之间的相互转化
+
+27、支持本地缓存 lua 变量，并从磁盘 重新装载至内存中
+
 
 ======================================
 
-# ver 52.2020.4.26 更新：
+# ver 59 更新：
 
 1、大大扩充了对于多线程、多进程 应用开发的能力支持
 
@@ -78,26 +84,22 @@
 6、其它一些实用 API 的支持（如模块注入、目录监控、管道输入输出、WMI 等等）
 
      （见文档：暂缺）
+
+7、支持 IE/Trident 内核浏览器沙箱 --use_sandbox
+
+     （见文档：暂缺）
+
+8、支持 API_Monitor 抓取进程API调用轨迹
+
+     （见文档：暂缺）
      
-7、扩展 lua_next_v3() 等几个接口，支持按序遍历 Lua table 结构！！！ 用法：
+9、支持 读、写 html、xml、json、ini、txt 格式配置文件，并实现各种格式之间的相互转化
 
-lua_pushnil(L);
+      （见文档：暂缺）
 
-while(lua_next_v3(L, i， 0)){
+10、支持本地缓存 lua 变量，并从磁盘重新装载至内存中
 
-。   //按序获取每一项
-   
-。   lua_pop_v3(L);
-   
-}
-
-8、支持 IE/Trident 内核浏览器沙箱 --use_sandbox
-
-     （见文档：暂缺）
-
-9、支持 API_Monitor 抓取进程API调用轨迹
-
-     （见文档：暂缺）
+      （见文档：暂缺）
 
 
 
@@ -240,7 +242,7 @@ win32exts.callback（）用于包装一个Python回调函数。
 
 
 
-# 实在编不下去了（←___←b'），下面是 win32exts 提供的接口分类清单, 至于典型用法请参考git上的 win32exts_for_Xxxx 仓库的demo 示例。
+# （←___←b'），下面是 win32exts 提供的接口分类清单, 至于典型用法请参考git上的 win32exts_for_Xxxx 仓库的demo 示例。
 
 ![win32exts](https://github.com/tankaishuai/win32exts_for_Python/blob/master/API/b1.jpg)
 ![win32exts](https://github.com/tankaishuai/win32exts_for_Python/blob/master/API/b2.jpg)
