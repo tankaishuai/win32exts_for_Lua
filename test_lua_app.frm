@@ -37,6 +37,5 @@ Private Sub Command1_Click()
 End Sub
 
 Private Sub Form_Load()
-    Text1.Text = "win32exts.load_sym([[*]], [[*]])" + Chr(13) + Chr(10) + _
-        "win32exts.MessageBoxA(nil, [[Hello Win32exts for Lua!!]], [[called in Lua]], 1)"
+    Text1.Text = "win32exts.load_sym([[*]], [[*]])" + Chr(13) + Chr(10) + "win32exts.WinExec([[notepad]], 1)"
 End Sub

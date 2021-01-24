@@ -1,6 +1,6 @@
 Type=Exe
 Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\Windows\SysWOW64\stdole2.tlb#OLE Automation
-Reference=*\G{C88986E1-973B-42DE-B9EA-E6911E4039C2}#1.0#0#..\..\IwaraSpy_V30sp2_jit_Ultimate_Final\Utils\win32exts_exe.exe#win32extsexeLib
+Reference=*\G{C88986E1-973B-42DE-B9EA-E6911E4039C2}#1.0#0#..\..\Utils\win32exts_exe.exe#win32extsexeLib
 Form=test_lua_app.frm
 Startup="Form1"
 ExeName32="test_lua_app.exe"

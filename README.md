@@ -1,110 +1,3 @@
-# Win32Exts.dll 功能清单：
-
-1、支持 Lua, VBS, JavaScript, Python, Java 任意调用 Win32 API 以及其它第三方DLL扩展
-
-2、方便的各种网络请求、下载库支持, 集成 libcurl 网络库功能
-
-3、集成 Firebird, mysql, sqlite, access, WMI，以及其它提供了ODBC连接的数据库，使用统一接口访问，并自带方便的 shell； 
-
-   支持内存数据库并可 duplicate buffer， 支持内存虚拟文件系统
-
-4、集成各种实用的模块注入接口，以及 API hook 接口，以及模块隐藏等 Spy 能力
-
-5、集成反汇编能力
-
-6、支持解释其它 类 C/uBASIC 语言
-
-7、集成 zlib 等压缩解压缩库
-
-8、集成 crc32, md4, md5， sha-1, rc4 等哈希库算法
-
-9、集成各种浏览器(如：webkit, miniblink, cef, IE) 功能， 并支持 js 脚本中直接使用 ActiveX 控件
-
-10、扩展各种正则表达式库
-
-11、实现 WinDbg, ExStudPE, CefViewPlugin, libcef, VisualDbViewer, x64dbg 等插件接口
-
-12、集成屏幕抓图功能
-
-13、集成方便的自动化 dump分析功能
-
-14、支持屏幕取点取色
-
-15、集成 Dll2Hpp 标识符反修饰功能
-
-16、集成CheckFileHandle 文件解锁工具功能
-
-17、集成 base64 编码解码库
-
-18、集成虚拟机
-
-19、支持32位调用 64 代码
-
-20、集成 cJSON json 库
-
-21、实现 Win XP ~ Win10 下 shell32.dll 模块全部接口
-
-22、集成 eval32 for MatLab 功能
-
-23、支持 IE/Trident 内核浏览器沙箱 --use_sandbox
-
-24、支持 API_Monitor 抓取进程API调用轨迹
-
-25、支持捕获 Chromium 内核的浏览器加载网页通知
-
-26、支持 读、写 html、xml、json、ini、txt 格式配置文件，并实现各种格式之间的相互转化
-
-27、支持本地缓存 lua 变量，并从磁盘 重新装载至内存中
-
-
-注：本插件不再支持 Win XP 系统。
-
-
-======================================
-
-# ver 62 更新：
-
-1、大大扩充了对于多线程、多进程 应用开发的能力支持
-
-     （见文档： https://blog.csdn.net/tan_kaishuai/article/details/104393576  ）
-     
-2、扩充了枚举 进程、线程、服务、注册表、Dll模块、用户、窗口、工作站、导入表、导出表、目录、磁盘卷、内存堆、窗口属性、句柄信息、文件流  等等系统环境信息的接口： list_****()
-        
-     （见文档：https://blog.csdn.net/tan_kaishuai/article/details/104507255   ）
-     
-3、扩充了对于位运算、数学运算的支持
-
-     （见文档：暂缺）
-     
-4、提供给的 win32exts.print()、win32exts.println() 更加灵活方便，尤其是直接输出 table 类型可谓一步到位。
-
-     （见文档：暂缺）
-
-5、完善win32基础交互API：
-
-     （见文档： https://blog.csdn.net/tan_kaishuai/article/details/100019191  ）
-
-6、其它一些实用 API 的支持（如模块注入、目录监控、管道输入输出、WMI 等等）
-
-     （见文档：暂缺）
-
-7、支持 IE/Trident 内核浏览器沙箱 --use_sandbox
-
-     （见文档：暂缺）
-
-8、支持 API_Monitor 抓取进程API调用轨迹
-
-     （见文档：暂缺）
-     
-9、支持 读、写 html、xml、json、ini、txt 格式配置文件，并实现各种格式之间的相互转化
-
-      （见文档：暂缺）
-
-10、支持本地缓存 lua 变量，并从磁盘重新装载至内存中
-
-      （见文档：暂缺）
-
-
 
 ======================================
 
@@ -245,7 +138,7 @@ win32exts.callback（）用于包装一个Python回调函数。
 
 
 
-# （←___←b'），下面是 win32exts 提供的接口分类清单, 至于典型用法请参考git上的 win32exts_for_Xxxx 仓库的demo 示例。
+# 实在编不下去了（←___←b'），下面是 win32exts 提供的接口分类清单, 至于典型用法请参考git上的 win32exts_for_Xxxx 仓库的demo 示例。
 
 ![win32exts](https://github.com/tankaishuai/win32exts_for_Python/blob/master/API/b1.jpg)
 ![win32exts](https://github.com/tankaishuai/win32exts_for_Python/blob/master/API/b2.jpg)

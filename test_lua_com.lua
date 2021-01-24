@@ -1,13 +1,6 @@
+ï»¿--
+-- æµ‹è¯• COM ç»„ä»¶, æ‰“å¼€è®¡ç®—å™¨
 --
--- ²âÊÔ COM ×é¼ş, ´ò¿ª¼ÆËãÆ÷
---
-
-require "win32exts"
---³õÊ¼»¯´úÂëÒ³
-win32exts.set_acp(0)
-
---³õÊ¼»¯×é¼ş¿â
-win32exts.co_init(true)
 
 wsh = win32exts.create_object("Wscript.Shell")
 
